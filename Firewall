@@ -1,6 +1,6 @@
 ---
-- name: allow port 80
-  ufw:
-   rule: allow 
-   port: '80'
-   proto: tcp 
+- firewalld:
+    zone: dmz
+    service: http
+    permanent: yes
+    state: enabled
