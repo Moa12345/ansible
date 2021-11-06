@@ -1,0 +1,6 @@
+---
+- name : Enable , Start Service
+  systemd: 
+      name : ex (Nginx)
+      enabled: yes
+      state: started
